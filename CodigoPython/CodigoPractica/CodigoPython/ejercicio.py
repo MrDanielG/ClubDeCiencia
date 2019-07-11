@@ -5,10 +5,20 @@ class Cliente:
         self.dinero = dinero
     
     def printCliente(self):
+        print("DATOS CLIENTE: ")
         print(f'Nombre: {self.nombre}')
         print(f'Correo: {self.correo}')
         print(f'Dinero: {self.dinero}')
 
+
+class Producto:
+    def __init__(self, nombre, precio):
+        self.nombre = nombre
+        self.precio = precio
+
+    def printProducto(self):
+        print(f'Nombre Producto: {self.nombre}')
+        print(f'Precio Producto: {self.precio}')
 
 class Tienda:
     def __init__(self, prod1, prod2, prod3):
@@ -35,16 +45,6 @@ class Tienda:
         #     else 
         #         print(f'No te alcanza para comprar {prod1.nombre}')
                 
-
-class Producto:
-    def __init__(self, nombre, precio):
-        self.nombre = nombre
-        self.precio = precio
-
-    def printProducto(self):
-        print(f'Nombre Producto: {self.nombre}')
-        print(f'Precio Producto: {self.precio}')
-
 
 #Productos
 prod1 = Producto('Papitas', 15)
